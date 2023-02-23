@@ -1,12 +1,19 @@
 <template>
   <div>
-    应用初始化
+    <!-- ElementPlus 图标测试 -->
+    <div>
+      <el-icon :size="14" :color="'red'">
+        <Edit />
+      </el-icon>
+    </div>
+    <!-- ElementPlus 组件测试 -->
+    <div>
+      <el-button>应用初始化</el-button>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .logo {
