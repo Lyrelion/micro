@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="root-app-container">
     <!-- ElementPlus 图标测试 -->
-    <div>
+    <div class="test-icon">
       <el-icon :size="14" :color="'red'">
         <Edit />
       </el-icon>
     </div>
     <!-- ElementPlus 组件测试 -->
-    <div>
+    <div class="test-element">
       <el-button>应用初始化</el-button>
     </div>
   </div>
@@ -15,17 +15,17 @@
 
 <script setup lang="ts"></script>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<style scoped lang="scss">
+.root-app-container {
+  width: 100%;
+  height: 100%;
+  .test {
+    &-icon {
+      background-color: rgb(34, 255, 0);
+    }
+    &-element {
+      background-color: var(--theme-color);
+    }
+  }
 }
 </style>

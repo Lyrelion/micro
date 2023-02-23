@@ -1,0 +1,176 @@
+/* 导航使用的变量 *******************************************************/
+
+/* 上暗 */
+:root[theme='LIGHT_DARK'],
+:root[theme='DARK'] {
+  --header-background: var(--theme-color);
+  --logo-color: #FFF;
+  --title-color: #FFF;
+  --menu-text-color: #FFF;
+  --menu-icon-color: #FFF;
+  --menu-active-line: #FFF;
+  --menu-active-background: rgba(0, 0, 0, 0.15);
+  --menu-active-gradient: linear-gradient(0deg, rgb(255 255 255 / 0.3) 0%, rgba(223, 223, 223, 0) 100%);
+  --menu-active-gradient-icon: linear-gradient(0deg, var(--theme-color-opacity-50) -10%, #FFF 80%);
+}
+
+/* 上亮 */
+:root[theme='DARK_LIGHT'],
+:root[theme='LIGHT'] {
+  --header-background: #FFF;
+  --logo-color: var(--theme-color);
+  --title-color: #333;
+  --menu-text-color: #333;
+  --menu-icon-color: rgba(51, 51, 51, 0.376);
+  --menu-active-line: var(--theme-color);
+  --menu-active-background: var(--theme-color);
+  --menu-active-gradient: linear-gradient(0deg, var(--theme-color) 0%, rgba(223, 223, 223, 0) 100%);
+}
+
+/* 左侧菜单使用的变量 *******************************************************/
+
+/* 左暗 */
+:root[theme='DARK'],
+:root[theme='DARK_LIGHT'] {
+  /* 默认 */
+  --aside-background: #292929;
+  --aside-menu-background: #333;
+  --aside-submenu-background: #292929;
+  --aside-text-color: #FFF;
+  --aside-icon-color: rgba(255, 255, 255, 0.6);
+  --aside-active-text-color: var(--theme-color);
+  --aside-active-background: false;
+  --aside-line-color: #FFFFFF30;
+
+  /* 蓝色 */
+  --aside-primary-background: #0049C4;
+  --aside-primary-menu-background: #0049C4;
+  --aside-primary-submenu-background: var(--aside-primary-background);
+  --aside-primary-active-text-color: #FFF;
+  --aside-primary-active-background: #FFFFFF15;
+
+  /* 绿色 */
+  --aside-success-background: #367536;
+  --aside-success-menu-background: #367536;
+  --aside-success-submenu-background: var(--aside-success-background);
+  --aside-success-active-text-color: #FFD200;
+  --aside-success-active-background: #FFD20015;
+
+  /* 橘色 */
+  --aside-orange-background: #292929;
+  --aside-orange-menu-background: #333;
+  --aside-orange-submenu-background: var(--aside-orange-background);
+  --aside-orange-active-text-color: var(--theme-color);
+  --aside-orange-active-background: #FFFFFF15;
+
+  /* 青色 */
+  --aside-green-background: #1A8F72;
+  --aside-green-menu-background: #1A8F72;
+  --aside-green-submenu-background: var(--aside-green-background);
+  --aside-green-active-text-color: #FFF;
+  --aside-green-active-background: #FFFFFF15;
+
+  /* 紫色 */
+  --aside-purple-background: #350A6B;
+  --aside-purple-menu-background: #350A6B;
+  --aside-purple-submenu-background: var(--aside-purple-background);
+  --aside-purple-active-text-color: #FFF;
+  --aside-purple-active-background: #FFFFFF15;
+
+  /* 黑色 */
+  --aside-black-background: #2F333E;
+  --aside-black-menu-background: #2F333E;
+  --aside-black-submenu-background: var(--aside-black-background);
+  --aside-black-active-text-color: #E4E45D;
+  --aside-black-active-background: #E4E45D15;
+}
+
+/* 左亮 */
+:root[theme='LIGHT'],
+:root[theme='LIGHT_DARK'] {
+  /* 默认 */
+  --aside-background: #FFF;
+  --aside-menu-background: #FFF;
+  --aside-submenu-background: #F3F3F3;
+  --aside-text-color: #333;
+  --aside-icon-color: #A0A0A0;
+  --aside-active-text-color: var(--theme-color);
+  --aside-active-background: var(--theme-color-opacity-15);
+  --aside-line-color: #F6F6F6;
+}
+
+/* 正文使用的变量 **********************************************************/
+
+:root {
+  /* 主题色 默认为primary */
+  --theme-color: #2A49E7;
+  --theme-color-opacity-10: rgba(16, 52, 232, 0.1);
+  --theme-color-opacity-15: rgba(16, 52, 232, 0.15);
+  --theme-color-opacity-20: rgba(16, 52, 232, 0.2);
+  --theme-color-opacity-30: rgba(16, 52, 232, 0.3);
+  --theme-color-opacity-50: rgba(16, 52, 232, 0.5);
+  --theme-color-opacity-60: rgba(16, 52, 232, 0.6);
+  --theme-color-opacity-90: rgba(16, 52, 232, 0.9);
+
+  /* 基础字号 用于整体动态改变字号使用 */
+  --base-font-size: 16px;
+
+  /* 正文文字颜色 */
+  --font-color1: #333;
+  --font-color2: #616161;
+  --font-color3: #999;
+  --font-color4: #ABAEB4;
+
+  /* 全局底色 */
+  --underpainting: #F1F1F3;
+
+  /* 背景色 */
+  --background-color: #FFF;
+
+  /* 边框 */
+  --border-color1: #E8E8E8;
+  --border-color2: #E8E8E8;
+
+  /* 图标的颜色 */
+  --icon-color1: #A0A0A0;
+  --icon-color2: rgb(170, 170, 170);
+
+  /* 圆角 */
+  --border-radius: 0.2rem;
+
+  /* start ----表格的表头颜色 */
+
+  /* 默认 */
+  --thead-background: rgb(245, 245, 245);
+
+  /* 蓝色 */
+  --thead-primary-background: #CEDDF8;
+
+  /* 绿色 */
+  --thead-success-background: #CFE3CF;
+
+  /* 橘色 */
+  --thead-orange-background: #F3DAD5;
+
+  /* 青色 */
+  --thead-green-background: #CFECE3;
+
+  /* 紫色 */
+  --thead-purple-background: #DCC9F2;
+
+  /* 黑色 */
+  --thead-black-background: #CCCDCF;
+  --table-header-background-color: var(--thead-background);
+
+  /* end ----表格的表头颜色 */
+
+  /* 表格的斑马纹颜色 */
+  --tbody-background: rgb(245, 245, 245);
+  --table-stripe-background: var(--tbody-background);
+
+  /* 表格鼠标滑过的颜色 */
+  --table-hover-background: #FFFFDF;
+
+  /* 弹框 */
+  --dialog-header-background: rgb(247, 247, 247);
+}

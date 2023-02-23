@@ -1,0 +1,13 @@
+/*
+ * @Description: 样式入口文件
+ * @Author: Lyrelion
+ * @Date: 2022-03-22 13:41:05
+ * @LastEditTime: 2023-02-23 10:32:24
+ */
+
+/* 通用样式 */
+@import './common.scss';
+/* 全局样式 */
+@import './global.scss';
+/* 自定义 Element 样式 */
+@import './element-variables.scss';

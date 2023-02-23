@@ -1,0 +1,237 @@
+/*
+ * @Description: 通用样式
+ * @Author: Lyrelion
+ * @Date: 2022-03-22 13:41:05
+ * @LastEditTime: 2023-02-23 10:16:04
+ */
+
+html,
+body {
+  height: 100%;
+  font-size: var(--base-font-size);
+}
+
+/** ****************** 修改 type = number 的样式 ****************** */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+/** ******************************************************** */
+
+
+/* 修改谷歌浏览器记住密码后 input 默认样式 */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  transition: background-color 50000s ease-in-out 0s;
+  -webkit-text-fill-color: #EDEDED !important;
+}
+
+/** ******************************************************** */
+
+/** ****************** 浏览器滚动条样式修改 ******************* */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-resizer {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 140px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #DDD;
+  background-clip: content-box;
+}
+
+/** ******************************************************** */
+
+
+/* 文本省略号 */
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 清除浮动 */
+.clear-float {
+  clear: both;
+}
+
+.color-red {
+  color: #FF2C18;
+}
+
+.color-white {
+  color: #FFF;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.direction-col {
+  flex-direction: column;
+}
+
+.flex.direction-row {
+  flex-direction: row;
+}
+
+.flex.flex-between-center {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex.flex-around-center {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex.flex-center {
+  align-items: center;
+}
+
+.flex.flex-right {
+  justify-content: flex-end;
+}
+
+.flex.flex-end {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex.flex-start {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex.flex-justify-center {
+  justify-content: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.main-p-md {
+  padding: 0 20px;
+}
+
+.m-t-md {
+  margin-top: 20px;
+}
+
+.m-b-md {
+  margin-bottom: 20px;
+}
+
+.m-t-sm {
+  margin-top: 10px;
+}
+
+.m-l-sm {
+  margin-left: 10px;
+}
+
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-r-sm {
+  margin-right: 10px;
+}
+
+.m-b-sm {
+  margin-bottom: 10px;
+}
+
+.m-r-xs {
+  margin-right: 5px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.m-l-xs {
+  margin-left: 5px;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.vertical-align-2 {
+  vertical-align: -2px;
+}
+
+.float-right {
+  float: right;
+}
+
+.tree-wrapper {
+  overflow-y: scroll;
+  max-height: 65%;
+}
+
+.height-full {
+  height: 100%;
+}
+
+/* 滚动条 */
+.overflow-scroll {
+  overflow: scroll;
+}
+
+/* 高度80% */
+.max-height-80per {
+  max-height: 80%;
+}
+
+/* 高度100% */
+.max-height-100per {
+  max-height: 100%;
+}
+
+/* 取消横向滚动 */
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
